@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form thêm công việc</title>
+</head>
+<body>
+    <header>
+        <h1>Form quản lí công việc</h1>
+    </header>
+    <nav>   
+        <a href = "#form">Form</a>
+        <a href = "#table">Bảng danh sách</a>   
+    </nav>
+    <main>
+        <section>
+            <h2 id="form">Form thêm công việc</h2>
+            <form name="workForm" id="workForm">
+                <label for="workName">Tên công việc:</label>
+                <input type="text" id="workName" name="workName" placeholder="Thêm tên công việc">
+                <small id="errorWorkName"></small>
+
+                <label for="people">Người phụ trách:</label>
+                <input type="text" id="people" name="people" placeholder="Thêm người phụ trách">
+                <small id="errorPeopleName"></small>
+
+                <label for="deadline">Hạn hoàn thành:</label>
+                <input type="datetime-local" id="deadline" name="deadline" placeholder="Nhập hạn hoàn thành">
+                <small id = "errorDeadline"></small>
+                <input type="submit" id="submit" value="Xác nhận">
+            </form>
+        </section>
+        <section>
+            <h2 id = "table">Bảng danh sách quản lí công việc</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên công việc</th>
+                        <th>Người phụ trách</th>
+                        <th>Hạn hoàn thành</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="workList">
+                
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

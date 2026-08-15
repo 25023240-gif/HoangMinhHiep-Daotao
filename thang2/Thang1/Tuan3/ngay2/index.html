@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bảng danh sách sinh viên</title>
+</head>
+<body>
+    <header>
+        <h1>Danh sách thông tin học viên</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#form">Form nhập liệu</a></li>
+            <li><a href="#table">Danh sách</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 id="form">Form lấy thông tin học viên</h2>
+            <form id="studentForm">
+                <label for="id">Mã sinh viên:</label>
+                <input type="text" id="id" name="id" required placeholder="Nhập mã sinh viên">
+
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required placeholder="Nhập họ tên đầy đủ">
+
+                <label for="birth">Ngày tháng năm sinh:</label>
+                <input type="date" id="birth" name="birth" required>
+
+                <label for="phoneNumber">Số điện thoại:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Nhập số điện thoại">
+
+                <label for="email">Địa chỉ email:</label>
+                <input type="email" id="email" name="email" required placeholder="abcxyz@gmail.com">
+
+                <input type="submit" id="submit" name="submit" value="Gửi thông tin">
+            </form>
+        </section>
+        <section>
+            <h2 id="table">Bảng danh sách sinh viên</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã SV</th>
+                        <th>Họ và tên</th>
+                        <th>Ngày tháng năm sinh</th>
+                        <th>Số điện thoại</th>
+                        <th>Địa chỉ email</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

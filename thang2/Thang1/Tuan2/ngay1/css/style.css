@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    padding: 20px;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(39, 39, 75);
+    padding: 20px;
+    color: beige;
+    text-align: center;
+
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.card {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+
+    ;
+}
+/* mobile first */
+.grid-courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    .grid-courses {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    } 
+}
+/* laptop */
+@media screen and (min-width: 1024px) {
+    .grid-courses {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        gap: 20px;
+    } 
+}

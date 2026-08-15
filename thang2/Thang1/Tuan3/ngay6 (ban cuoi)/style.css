@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif ;
+}
+header h1 {
+    text-align: center;
+    padding: 12px;
+    background-color: #101E42;
+    color: white;
+    font-size: 24px;
+}
+body {
+    background-color: #F8F9FA;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    color: #101E42;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #2563EB; 
+}
+
+h2 {
+    text-align: center;
+    padding: 18px;
+} 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e8f0;  
+    border-radius: 4px;
+    gap: 24px;
+    padding: 24px;
+    background-color: white;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+form input[type="submit"]:hover, 
+form button:hover {
+  background-color: #1a3b6e; 
+  color: white
+}
+small {
+    color: red;
+}
+.toolContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    gap: 10px;                      
+}
+#searchInput {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    background-color: #fafafa;
+}
+
+.filter-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    gap: 10px;                     
+}
+.btn-filter {
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.btn-filter.active {
+    background: #007bff;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px, solid;
+    text-align: center;
+    padding: 7px;
+}
+
+.staticContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.statics-card {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+

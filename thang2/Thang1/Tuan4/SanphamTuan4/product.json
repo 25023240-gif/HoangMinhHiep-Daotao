@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "lenovo thinkpad p15 gen2",
+    "category": "Laptop",
+    "price": 25990000,
+    "image": "./asset/thinkpadp15gen2.jpg"
+
+  },
+  {
+    "id": 2,
+    "name": "iPhone 17 Pro Max",
+    "category": "Điện thoại",
+    "price": 29990000,
+    "image": "./asset/iphone17promax.png"
+  },
+  {
+    "id": 3,
+    "name": "Bàn phím công thái học",
+    "category": "Phụ kiện",
+    "price": 1500000,
+    "image": "./asset/banphim.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chuột Logitech",
+    "category": "Phụ kiện",
+    "price": 349000,
+    "image": "./asset/chuotLogitech.webp"
+  },
+  {
+    "id": 5,
+    "name": "Tai nghe Sony",
+    "category": "Phụ kiện",
+    "price": 749000,
+    "image":"./asset/tainghesony.jpg"
+  },
+  {
+    "id": 6,
+    "name": "SamSung S25 ultra",
+    "category": "Điện thoại",
+    "price": 19990000,
+    "image":"./asset/samsung.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Lenovo LOQ essential 2025",
+    "category": "Laptop",
+    "price": 24990000,
+    "image":"./asset/lenovoLOQ.webp"
+  },
+  {
+    "id": 8,
+    "name": "HP Victus 15",
+    "category": "Laptop",
+    "price": 23990000,
+    "image":"./asset/hpvictus15.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Iphone 15 Pro max",
+    "category": "Điện thoại",
+    "price": 18490000,
+    "image":"./asset/iphone15promax.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Loa bluetooth mini",
+    "category": "Phụ kiện",
+    "price": 749000,
+    "image":"./asset/loabluetooth.jpg"
+  }
+]

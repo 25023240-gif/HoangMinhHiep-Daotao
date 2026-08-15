@@ -1,0 +1,115 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #F8FAFC; 
+  color: #334155;
+  line-height: 1.5;
+}
+
+
+header {
+  background-color: #1E293B;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+header h1 {
+  font-weight: 600;
+}
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+nav {
+  background-color: #FFFFFF;
+  padding: 12px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px; 
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #64748B;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #2563EB; 
+}
+
+
+.card {
+  background-color: #FFFFFF; 
+  border: 1px solid #E2E8F0;
+  border-radius: 8px; 
+  padding: 12px;
+  text-align: center;
+}
+
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  background-color: #E2E8F0; 
+}
+table {
+  text-align: center;
+  width: 100%;
+  border:solid 1px;
+  border-radius: 4px;
+  padding: 10px 0;
+  border-collapse: collapse;
+}
+th {
+  background-color: #1E293B;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-align: center;
+}
+td {
+  padding: 12px 16px;
+  border-bottom: 2px solid #E2E8F0;
+}
+footer {
+  background-color: #1E293B;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 16px;
+  font-size: x-small;
+}
+
+/* mobile first */
+.grid-courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    .grid-courses {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    } 
+}
+/* laptop */
+@media screen and (min-width: 1024px) {
+    .grid-courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    } 
+}
+

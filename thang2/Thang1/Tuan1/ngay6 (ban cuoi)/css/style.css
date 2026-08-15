@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(16, 16, 58);
+    color:beige;
+    text-align: center;
+    padding : 10px;
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color:beige;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+nav {
+    background-color: green;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    background-color: antiquewhite;
+    margin: 0px;
+}
+h2 {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.khoahoc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    border-style: solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding : 14px;
+    margin: 8px;
+}
+input[type=text], select, input[type=password], input[type=tel], input[type=email], input[type=radio] {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding : 12px 0;  
+    margin: 8px; 
+    background-color: rgb(207, 190, 190)
+}
+#learning {
+    display: block;
+}
+input[type=submit] {
+    background-color: green;
+    color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    box-sizing: border-box; 
+    margin : 12px 0;
+    padding: 12px;
+}
+footer {
+    background-color: rgb(16, 16, 58);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+}
+a:active {
+    background-color: grey;
+    color: white
+}
+input[type=submit]:active {
+    background-color: grey;
+    color: white;
+}
+@media (min-width: 1366px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .khoahoc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+}
+
+

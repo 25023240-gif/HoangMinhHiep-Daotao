@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quản lý giỏ hàng</title>
+</head>
+<body>
+    <h2>Quản Lý Giỏ Hàng</h2>
+    <div class="form-group">
+        <input type="text" id="nameInput" placeholder="Tên sản phẩm">
+        <input type="number" id="priceInput" placeholder="Giá sản phẩm">
+        <button id="addBtn">Thêm sản phẩm</button>
+    </div>
+
+    <div class="form-group">
+        <input type="number" id="maxPriceInput" placeholder="Giá tối đa">
+        <button id="filterBtn">Lọc theo giá</button>
+        <button id="resetFilterBtn">Reset loc</button>
+    </div>
+
+    <p id="error-msg"></p>
+
+    <h3>Danh sách sản phẩm:</h3>
+    <ul id="productList"></ul>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

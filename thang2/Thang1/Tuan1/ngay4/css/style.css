@@ -1,0 +1,68 @@
+* {
+    background-color: antiquewhite;
+}
+header {
+    text-align: center;
+}
+nav {
+    background-color: #1b2a4a;;
+    text-align: center;  /* Chữ căn vào giữa */
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 10px 10px;
+}
+a {
+    text-decoration: none;
+}
+body {
+    width: 80%;           
+    max-width: 1100px;    
+    margin: 0 auto;       
+}
+img {
+    width : 300px;
+}
+#thongtinkhoahoc {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.khoahoc {
+    display: flex;
+    justify-content: center; 
+    gap: 70px;              
+}
+
+.combokhoahoc img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      
+}
+form {
+    border: solid 2px;
+    border-radius: 4px;
+    padding: 15px;
+}
+input[type=text], select, input[type=password], input[type=email], input[type=tel] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color:#1b2a4a;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin : 10px 0;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}

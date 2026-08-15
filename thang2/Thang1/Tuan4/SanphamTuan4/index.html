@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Danh mục sản phẩm</title>
+</head>
+<body>
+    <h1>Danh sách sản phẩm</h1>
+    <div class="filter-control">
+        <h3>Bảng điều khiển bộ lọc</h3>
+        <div class="filter-input">
+            <div>
+                <label for="searchInput">Tìm kiếm sản phẩm:</label>
+                <input id="searchInput" name="searchInput" placeholder="Tìm kiếm sản phẩm">
+            </div>
+            <div>
+                <label for="category-select">Danh mục</label>
+                <select id="category-select" name="category-select">
+                    <option value="all">Danh mục</option>
+                    <option value="Điện thoại">Điện thoại</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Phụ kiện">Phụ kiện</option>
+                </select>
+            </div>
+            <div>
+                <label for="sort-select">Sắp xếp theo</label>
+                <select id="sort-select" name="sort-select">
+                    <option value="default">Mặc định:</option>
+                    <option value="price-asc">Giá tăng dần:</option>
+                    <option value="price-desc">Giá giảm dần:</option>
+                </select>
+            </div>
+            <div>
+                <button id="reset">Reset lọc</button>
+            </div>      
+        </div>
+    </div>
+
+    <div id="error-message" class="error hidden"></div>
+
+    <div id ="product-list" class="product-grid">
+
+    </div>
+    <script type="module" src="/js/main.js"></script>
+</html>
