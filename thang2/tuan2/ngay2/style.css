@@ -1,0 +1,73 @@
+/* 1. Căn chỉnh tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* 2. Trang trí Form */
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 350px;
+    margin: 30px auto;
+}
+
+form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Giúp input không bị tràn khung */
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+/* 3. Trang trí Bảng (Table) */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp viền bảng */
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Tô màu xám nhạt xen kẽ các dòng */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

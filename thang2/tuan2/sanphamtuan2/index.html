@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quản lý học viên</title>
+</head>
+<body>
+
+    <form id="studentForm">
+        <h2>Thêm Học Viên</h2>
+        <div>
+            <label for="fullName">Họ và tên <span class="required">(*)</span></label>
+            <input type="text" id="fullName"name="fullName" placeholder="Nhập họ và tên">
+            <small class="errorMsg" id="fullNameError"></small>
+        </div>
+        <div>
+            <label for="className">Lớp <span class="required">(*)</span></label>
+            <input type="text" id="className" name="className" placeholder="Nhập lớp">
+            <small class="errorMsg" id="classNameError"></small>
+        </div>
+        <div>
+            <label for="phone">Số điện thoại <span class="required">(*)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+            <small class="errorMsg" id="phoneError"></small>
+        </div>
+        <div>
+            <label for="email">Địa chỉ email <span class="required">(*)</span></label>
+            <input type="email" id="email" name="email" placeholder="Nhập email">
+            <small class="errorMsg" id="emailError"></small>
+        </div>
+        <div>
+            <label for="gpa">GPA tích lũy <span class="required">(*)</span></label>
+            <input type="number" step="any" id="gpa" name="gpa" placeholder="Nhập GPA">
+            <small class="errorMsg" id="gpaError"></small>
+        </div>
+        <button type="submit" id="submit">Thêm sinh viên</button>
+    </form>
+    
+    <div class="container-tool">
+        <div class="tool-group">
+            <label for="searchInput">Tìm kiếm:</label>
+            <input type="search" id="searchInput" placeholder="Tìm kiếm sinh viên">
+        </div>
+        <div class="tool-group">
+            <label for="filterInput">Lọc sinh viên theo gpa</label>
+            <input type="text" id="filterInput" placeholder="Nhập gpa tối thiểu">
+            <small class="errorMsg" id="filterError"></small>
+        </div>
+        <button type="button" id="filterBtn">lọc</button>
+        <button type="button" id="resetBtn">Reset lọc</button>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Lớp</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ email</th>
+                <th>GPA tích lũy</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="studentData"></tbody>
+    </table>
+
+    <template id="template">
+      <tr>
+        <td class="stt"></td>
+        <td class="name"></td>
+        <td class="class"></td>
+        <td class="phoneNum"></td>
+        <td class="email"></td>
+        <td class="gpa"></td>
+        <td>
+          <button class="delete-btn" data-action="delete">Xóa</button>
+          <button class="update-btn" data-action="update">Sửa</button>
+        </td>
+      </tr>
+    </template>
+    <script type="module" src="js/main.js"></script>
+</body>

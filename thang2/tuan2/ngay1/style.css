@@ -1,0 +1,69 @@
+/* Reset lề cơ bản và đổi font chữ dễ nhìn */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Định dạng Form: Giúp các ô nhập xếp hàng dọc */
+#form {
+    width: 400px;
+    margin: 0 auto 30px auto; /* Căn giữa form */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Định dạng nhãn và ô nhập */
+label {
+    display: block; /* Xuống dòng cho mỗi nhãn */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    width: 100%; /* Kéo dài hết chiều rộng form */
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Giữ kích thước không bị tràn */
+}
+
+/* Định dạng nút Xác nhận */
+#submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Định dạng Bảng (Table) */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp đường viền bảng */
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Cho hàng tiêu đề bảng nổi bật hơn */
+thead {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
